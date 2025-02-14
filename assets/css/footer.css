@@ -32,30 +32,42 @@
 .ei-form-field {
     width: 48%;
     position: relative;
+    padding: 10px 0;
 }
 
 .ei-full-width {
     width: 100%;
 }
 
-label {
+.ei-form-group label {
     color: #ccc;
-    font-size: 14px;
+    font-size: 16px;
     display: block;
-    margin-bottom: 5px;
+    position: absolute;
+    bottom: 20px;
 }
 
-input {
+.ei-form-group input {
     width: 100%;
     background: transparent;
     border: none;
     border-bottom: 1px solid #b59460;
-    padding: 8px 0;
+    padding: 15px 0;
     color: white;
     font-size: 16px;
     outline: none;
 }
 
-input::placeholder {
+.ei-form-group input::placeholder {
     color: #777;
+}
+ul.ei-social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+ul.ei-social-links svg {
+    width: 25px;
+    fill: #fff;
 }
