@@ -1,4 +1,61 @@
+.ei-footer{
+    background-color: #181818;
+    padding: 100px 0px;
+}
+.ei-footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.ei-footer-logo, .ei-footer-contact{
+    max-width: 50%;
+    align-self: flex-start;
+}
+.ei-footer-logo a img{
+    width: 200px;
+}
+.ei-footer-contact h3{
+    font-size: 20px;
+}
 .ei-footer-bottom-last {
     display: flex;
     justify-content: space-between;
+    color: rgb(107 114 128);
+}
+
+.ei-form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ei-form-field {
+    width: 48%;
+    position: relative;
+}
+
+.ei-full-width {
+    width: 100%;
+}
+
+label {
+    color: #ccc;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #b59460;
+    padding: 8px 0;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #777;
 }
