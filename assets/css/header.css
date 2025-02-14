@@ -1,0 +1,141 @@
+/*==============
+== Header Start
+===============*/
+.ei-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+} 
+
+ 
+ /* Header */
+ #ei-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Sticky Header on Scroll */
+#ei-header.sticky {
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+}
+.logo img {
+    max-width: 200px;
+    max-height: 100px;
+}
+/* Navigation */
+.ei-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ei-nav ul li {
+    margin: 0 15px;
+}
+
+.ei-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.sticky .ei-nav ul li a {
+    color: black;
+}
+
+/* Hero Section */
+.ei-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#ei-hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ei-hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Content Section */
+.ei-content {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.logo{
+    margin: 0 auto;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: #222;
+    clip-path: circle(0% at 100% 50%);
+    transition: clip-path 1s ease-in-out;
+}
+
+.menu-container.open {
+    clip-path: circle(150% at 100% 50%);
+}
+
+.menu-content {
+    color: white;
+    padding: 20px;
+}
+.menu-icon, .menu-close {
+    position: absolute;
+    right: 35px;
+    top: 50px;
+}
+.menu-toggle, .menu-close {
+    font-size: 14px;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.menu-toggle{
+    background-color: rgb(176 154 100);
+    border: 1px solid rgb(176 154 100);
+    border-radius: 5px;
+}
+.menu-close{
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.header-social-items{
+    display: flex;
+}
+.header-social-items ul li{
+    list-style-type: none;
+}
+.header-social-items svg{
+    width: 30px;
+}
+
+/*==============
+== Header End
+===============*/
